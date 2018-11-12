@@ -1,5 +1,4 @@
-[![Build Status](https://travis-ci.org/ballerina-guides/securing-restful-services-with-ldap.svg?branch=master)]
-(https://travis-ci.org/ballerina-guides/securing-restful-services-with-basic-auth)
+[![Build Status](https://travis-ci.org/VijithaEkanayake/securing-restful-services-with-ldap.svg?branch=master)](https://travis-ci.org/ballerina-guides/securing-restful-services-with-basic-auth)
 
 # Securing RESTful Services with LDAP
 
@@ -36,7 +35,7 @@ The following figure illustrates all the functionalities of the OrderMgt RESTful
 - To provide required LDAP user store for this guide, we have created a docker image with an embedded Apache DS which contains the user details that should be used in authentication and authorization. we will use the following LDAP schema, which creates two users. The 'counter' user only has 'add_order' scope, whereas the 'admin' user has 'add_order', 'update_order' and 'cancel_order' scopes. Here scopes are equivalent to LDAP groups. Follow the intruction to setup LDAP server neccessory for the guide.
 - Execute the following command to pull docker image from the docker hub.
 ```bash
-docker pull vijithaekanayake/embedded_ldap_server
+docker pull vijithaekanayake/embedded_ldap_server:1.0.0
 ```
 - After pulling the docker image, execute below command to start the LDAP server.
 ```bash
